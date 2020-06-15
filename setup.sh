@@ -97,7 +97,7 @@ apt-get install git -y > /dev/null 2>&1 & spinner -p && spinner -t
 clear
 #Script starts
 #cd $HOME
-#cd termuxstyling
+#cd FreakLogo
 echo Script made by:- Freaked Dude
 #Uninstall
 if [ -e ".user.cfg" ]
