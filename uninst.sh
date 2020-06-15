@@ -10,7 +10,7 @@ echo "command_not_found_handle() {
 }
 
 PS1='\$ '" > bash.bashrc
-echo "Welcome to Termux!
+echo "Freaked Dude Greets You Welcome to Termux!
 
 Wiki:            https://wiki.termux.com
 Community forum: https://termux.com/community
@@ -24,5 +24,5 @@ Upgrade packages:  pkg upgrade
 Learn more:        pkg help" > motd
 cd
 cd /$HOME
-figlet FemurTech
+figlet 
 echo Now Your Termux is back to Original
