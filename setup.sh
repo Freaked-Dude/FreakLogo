@@ -98,7 +98,7 @@ clear
 #Script starts
 #cd $HOME
 #cd termuxstyling
-echo Script made by:- Dark Warrior
+echo Script made by:- Freaked Dude
 #Uninstall
 if [ -e ".user.cfg" ]
 then
@@ -121,7 +121,7 @@ then
         	/data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
 		} 
 		PS1='\$ '" > bash.bashrc & echo "" & spinner -t && clear
-		echo "Welcome to Termux!
+		echo " Freaked Dude Greets You Welcome to Termux!
 		Wiki:            https://wiki.termux.com
 		Community forum: https://termux.com/community
 		IRC channel:     #termux on freenode
@@ -135,7 +135,7 @@ then
 		cd
 		cd /$HOME
 		figlet FemurTech
-		echo Now Your Termux is back to Original
+		echo Now Your Termux is back to Original - Subscribe To Freaked Dude
 		echo "Uninstalled Succesfully"
 		exit 0
 		;;
@@ -177,7 +177,7 @@ sleep 0.1 & spinner -p && spinner -t
 #Set default username if found null
 if [ -z "$uname" ]
 then
-	uname="FemurTech"
+	uname="FreakedDude"
 fi
 #Sets bash.bashrc aka startup
 echo "command_not_found_handle() {
@@ -236,29 +236,29 @@ cdp() {
 updatedw() {
 	ppath=\${pwd};
 	cd \$HOME
-	if [ -d \"\$HOME/termuxstyling\" ]
+	if [ -d \"\$HOME/FreakLogo\" ]
 	then
-		cd termuxstyling
+		cd FreakLogo
 		git fetch >/dev/null
 		var=\$(git status | grep 'Your branch')
 		# echo \$var
 		if [[ \$var == *\"up to date\"* ]];
 		then 
-			clear && echo \"Already running the latest version!!\" && echo ------------------------------------- && figlet \$(sed '1q;d' 'ver.cfg') && figlet FemurTech
+			clear && echo \"Already running the latest version!!\" && echo ------------------------------------- && figlet \$(sed '1q;d' 'ver.cfg') && figlet FreakedDude
 		else
 			git pull
 			bash setup.sh;
-			clear && echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' 'ver.cfg') && figlet FemurTech && echo Restart to apply changes
+			clear && echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' 'ver.cfg') && figlet FreakedDude && echo Restart to apply changes
 		fi
 	else
-		git clone https://github.com/darkwarrior3/termuxstyling.git
+		git clone https://github.com/Freaked-Dude/FreakLogo
 		cd termuxstyling
 		prm sh
 		clear
 		bash
 		bash setup.sh
 		wait
-		echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' '/data/data/com.termux/files/home/termuxstyling/ver.cfg') && figlet FemurTech && echo Restart to apply changes
+		echo \"Update Success\" && echo -------------- && figlet Success && figlet \$(sed '1q;d' '/data/data/com.termux/files/home/FreakLogo/ver.cfg') && figlet FreakedDude && echo Restart to apply changes
 	fi
 	cd \$ppath
 }
@@ -267,23 +267,23 @@ txt() { cat \$1.*; }
 figlet $uname
 PS1='\033[1;91mroot@termux[\033[1;93m\W\033[1;91m]:
 # \033[1;92m'
-if [ -d \"\$HOME/termuxstyling\" ]
+if [ -d \"\$HOME/FreakLogo\" ]
 then
-	if grep -q '# 011' \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+	if grep -q '# 011' \"/data/data/com.termux/files/home/FreakLogo/.user.cfg\"
 	then
-		lnum=\$( sed '3q;d' \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\" )
+		lnum=\$( sed '3q;d' \"/data/data/com.termux/files/home/FreakLogo/.user.cfg\" )
 		lnum=\$( echo \$lnum | sed 's/# 011//g' )
 		lnum=\$( echo \$lnum | sed 's/ //g' )
-		echo \$( sed '3q;d' \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\" )
+		echo \$( sed '3q;d' \"/data/data/com.termux/files/home/FreakLogo/.user.cfg\" )
 			if [[ ! \$lnum -eq 5 ]]
 			then
 				lnum=\$((\$lnum+1))
-				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/FreakLogo/.user.cfg\"
 			else
 				lnum=1
-				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+				sed -i \"/.*# 011.*/ c\\ \$lnum # 011\" \"/data/data/com.termux/files/home/FreakLogo/.user.cfg\"
 				cd \$HOME
-				cd termuxstyling
+				cd FreakLogo
 				git fetch >/dev/null
 				test=\$(git status | grep 'Your branch')
 				echo \$test
@@ -295,7 +295,7 @@ then
 			fi
 	else
 		echo hi
-		echo \"1 # 011\" >> \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
+		echo \"1 # 011\" >> \"/data/data/com.termux/files/home/FreakLogo/.user.cfg\"
 	fi
 else
 	updatedw
@@ -317,11 +317,11 @@ alias update=\"apt-get update;apt-get upgrade\"" > /data/data/com.termux/files/u
 cd /$HOME
 cd termuxstyling
 echo Script made by
-toilet Dark
-toilet Warrior
+toilet Freaked
+toilet Dude
 sleep 2
 mdv README.md
 cd $pdir
-echo Subscribe to our YT channel FemurTech
-echo tinyurl.com/femurtech
+echo Subscribe to our YT channel Freaked Dude
+echo youtube.com/freakeddude
 echo Restart to apply changes
