@@ -1,6 +1,5 @@
-# Made By Freaked DudeDude(White Tiger)
-### This script will make your termux look better. Enjoy! ! 
-![logo](logo.png)
+# Made By Freaked Dude(White Tiger)
+### This script will make your termux look better. Enjoy! !
 #### Installing
 
 1. chmod +x \*.\*
